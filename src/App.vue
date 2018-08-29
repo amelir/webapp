@@ -1,5 +1,11 @@
 <template>
-  <div id="app">
-    <div>Render good</div>
-  </div>
+  <router-view/>
 </template>
+
+<style lang="scss">
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+</style>
