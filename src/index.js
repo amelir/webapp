@@ -4,12 +4,14 @@ import Router from 'vue-router';
 import 'components/global.scss';
 
 // Import views from other modules
+import { AccountDashboard } from 'account';
 import LoginRoute, { Login, Register } from 'login';
 
 // Init router
 Vue.use(Router);
 
 const routes = [
+  { path: '/account', component: AccountDashboard, name: 'account_settings' },
   { path: '/login', component: LoginRoute, children: [
     {
       path: '',

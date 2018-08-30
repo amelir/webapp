@@ -27,6 +27,7 @@
     "webpack-dev-server": "^3.1.6"
   },
   "dependencies": {
+    "account": "github:amelir/account",
     "components": "github:amelir/components",
     "login": "github:amelir/login",
     "vue": "^2.5.17",
