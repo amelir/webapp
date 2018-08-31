@@ -1,6 +1,7 @@
 import App from './App';
 import Vue from 'vue';
 import Router from 'vue-router';
+import Vuex from 'vuex';
 import 'components/global.scss';
 
 // Import views from other modules
@@ -31,9 +32,25 @@ const router = new Router({
   routes
 });
 
+// Init store
+Vue.use(Vuex);
+const store = new Vuex.Store({
+  state: {
+    user: {
+      email: ''
+    }
+  },
+
+  mutations: {
+    accountLogin(state, payload){
+      state.user.email = payload.email || '';
+    }
+  }
+});
 
 new Vue({
   router,
+  store,
   el: '#app',
   render: h => h(App)
 });
