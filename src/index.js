@@ -12,7 +12,24 @@ import LoginRoute, { Login, Register } from 'login';
 Vue.use(Router);
 
 const routes = [
-  { path: '/account', component: AccountDashboard, name: 'account_settings' },
+  { path: '/account', component: AccountDashboard, name: 'account_settings', children: [
+    {
+      path: 'billing',
+      name: 'account_billing'
+    },
+    {
+      path: 'data',
+      name: 'account_data'
+    },
+    {
+      path: 'personalize',
+      name: 'account_personalize'
+    },
+    {
+      path: 'security',
+      name: 'account_security'
+    }
+  ]},
   { path: '/login', component: LoginRoute, children: [
     {
       path: '',
