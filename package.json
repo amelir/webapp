@@ -1,6 +1,6 @@
 {
   "name": "webapp",
-  "version": "0.0.0-1",
+  "version": "0.0.0-2",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "account": "github:amelir/account",
+    "axios": "^0.18.0",
     "components": "github:amelir/components",
     "login": "github:amelir/login",
     "vue": "^2.5.17",
