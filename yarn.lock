@@ -820,8 +820,8 @@ component-emitter@^1.2.1:
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
 
 "components@github:amelir/components":
-  version "0.0.0"
-  resolved "https://codeload.github.com/amelir/components/tar.gz/93ece8683fab5b5f2bfec2d38d884dd2001e181c"
+  version "0.0.1-2"
+  resolved "https://codeload.github.com/amelir/components/tar.gz/4d66830bffd09ee3f86c945c8b674324874101ff"
 
 compressible@~2.0.14:
   version "2.0.14"
