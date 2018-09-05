@@ -9,6 +9,9 @@ import 'components/global.scss';
 import Account, { AccountDashboard, AccountSecurity } from 'account';
 import LoginRoute, { Login, Register } from 'login';
 
+// Import stores from modules
+import { sidebarStore } from 'components'
+
 // Init router
 Vue.use(Router);
 
@@ -69,6 +72,10 @@ const store = new Vuex.Store({
     accountLogin(state, payload){
       state.user.email = payload.email || '';
     }
+  },
+
+  modules: {
+    sidebar: sidebarStore
   }
 });
 
